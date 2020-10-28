@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js 3 CDN - Counter Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="sr-only">Vue.js 3 CDN - Counter Demo</h1>
+    <div class="wrapper" id="app">
+      <button class="button" @click="incrementCount">
+        <img src="./caret-up.png" alt="" />
+      </button>
+      <div class="count-box">
+        <p>{{ currentCount }}</p>
+      </div>
+      <button class="button" @click="decrementCount">
+        <img src="./caret-down.png" alt="" />
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const App = {
+        data: () => ({
+          currentCount: 0
+        }),
+        methods: {
+          incrementCount() {
+            this.currentCount += 1
+          },
+          decrementCount() {
+            this.currentCount -= 1
+          }
+        }
+      }
+
+      Vue.createApp(App).mount('#app')
+    </script>
+  </body>
+</html>

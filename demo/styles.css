@@ -1,0 +1,49 @@
+body {
+  background-color: #41b883;
+  font-family: 'Kanit', sans-serif;
+}
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+  border: 0;
+}
+
+.count-box {
+  color: white;
+  font-weight: bold;
+  font-size: 8rem;
+  background-color: #34495e;
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.count-box p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
