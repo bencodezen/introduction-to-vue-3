@@ -13,33 +13,15 @@
   <body>
     <h1 class="sr-only">Vue.js 3 CDN - Counter Demo</h1>
     <div class="wrapper" id="app">
-      <button class="button" @click="incrementCount">
+      <button class="button">
         <img src="./caret-up.png" alt="" />
       </button>
       <div class="count-box">
-        <p>{{ currentCount }}</p>
+        <p>-1</p>
       </div>
-      <button class="button" @click="decrementCount">
+      <button class="button">
         <img src="./caret-down.png" alt="" />
       </button>
     </div>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script>
-      const App = {
-        data: () => ({
-          currentCount: 0
-        }),
-        methods: {
-          incrementCount() {
-            this.currentCount += 1
-          },
-          decrementCount() {
-            this.currentCount -= 1
-          }
-        }
-      }
-
-      Vue.createApp(App).mount('#app')
-    </script>
   </body>
 </html>
